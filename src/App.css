@@ -36,11 +36,12 @@
     transform: rotate(360deg);
   }
 }
-.test{
-	
-    height: 50px;
-	width: 500px;
-	margin: 20px;
+.test{    
+	height: 7vmin;
+    width: 57vmin;
+    border: 3px solid gray;
+    margin-top: 2vmin;
+    box-shadow: 10px 0px 15px 9px #4e4e56;
 }
 .full{
 	width: 100%;
@@ -49,11 +50,11 @@
 }
 #name{
 	display: flex;
-	width: 94%;
+	
 }
 #countrystate{
 	display: flex;
-	width: 94%;
+	
 }
 #imgicon{
 	width: 5%;
@@ -67,4 +68,27 @@
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: rgba(8, 8, 8, 0.637);
 	font-weight: bold;
+  }
+
+  @media only screen and (max-width: 600px) {
+	body {
+	  background-color: lightblue;
+	}
+
+	.App-header {
+		background-color: #5e6572a9;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: calc(10px + 2vmin);
+		color: white;
+	}
+	.test {
+		height: 12vmin;
+		width: 100vmin;
+		border: 3px solid gray;
+		margin-top: 2vmin;
+		box-shadow: 10px 0px 15px 9px #4e4e56;
+	}
   }
